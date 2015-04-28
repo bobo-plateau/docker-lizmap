@@ -163,6 +163,8 @@ Docker Commandes:
 * docker stop name_container --> stopping container.
 * docker rm name_container --> delete container (possibility to do : docker stop name_container && docker rm name_container)
 * docker exec -it name_container bash --> go into the container with a session root shell and do anything.
+* docker cp <containerId>:/file/path/within/container /host/path/target ---> copy files from container to host.
+* docker exec -i moncontainer /bin/bash -c 'cat > /inside-container-file' < fichier-exterieur ---> copy files from host to container.
 * .... ---> https://docs.docker.com/userguide/
 ____________________________________________________________________________________
 
