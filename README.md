@@ -112,7 +112,6 @@ Go to "lizmap configuration"
 
 change "Path to the local directory" to /home/
 ```
-![docker_lizmap](https://cloud.githubusercontent.com/assets/6421175/7387388/ec0cd974-ee5c-11e4-9587-fd1fb64b92c7.jpeg)
 
 ![docker_lizmap](https://cloud.githubusercontent.com/assets/6421175/7345155/66bd78cc-ecd2-11e4-987b-6788a104adb3.jpeg)
 
@@ -121,6 +120,10 @@ change "Path to the local directory" to /home/
 http://"your_ip_serveur":8081/websig/lizmap/www/
 
 > exemple:
+
+![docker_lizmap](https://cloud.githubusercontent.com/assets/6421175/7387388/ec0cd974-ee5c-11e4-9587-fd1fb64b92c7.jpeg)
+
+
 ![docker_lizmap](https://cloud.githubusercontent.com/assets/6421175/7346841/96890bc4-ece2-11e4-82d7-d79d6f286aab.jpeg)
 
 ____________________________________________________________________________________
