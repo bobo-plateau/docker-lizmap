@@ -112,6 +112,8 @@ Go to "lizmap configuration"
 
 change "Path to the local directory" to /home/
 ```
+![docker_lizmap](https://cloud.githubusercontent.com/assets/6421175/7387388/ec0cd974-ee5c-11e4-9587-fd1fb64b92c7.jpeg)
+
 ![docker_lizmap](https://cloud.githubusercontent.com/assets/6421175/7345155/66bd78cc-ecd2-11e4-987b-6788a104adb3.jpeg)
 
 8. Try your project:
