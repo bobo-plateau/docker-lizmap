@@ -39,7 +39,7 @@ mkdir /home/lizmap_project
 ```
 cp /var/www/websig/lizmap/var/jauth.db /home/lizmap_config/
 
-cp/var/www/websig/lizmap/var/logs.db  /home/lizmap_config/
+cp /var/www/websig/lizmap/var/logs.db  /home/lizmap_config/
 
 cp /var/www/websig/lizmap/var/config/lizmapConfig.ini.php /home/lizmap_config/
 ```
@@ -54,10 +54,12 @@ https://github.com/3liz/lizmap-web-client/blob/master/lizmap/var/config/lizmapCo
 
 4. Change permissions for docker read and write about the host:
 
-If the host is ubuntu server:
+* If the host is ubuntu or Debian server :
+```
 Do a chown :www-data on each file ( or add -R for the folder)
+```
 
-If the host is centos or other: 
+* If the host is centos or other: 
 ```
 do a chown :33 on each file (ex: chown :33 -R /home/lizmap_config ).
 ```
@@ -106,7 +108,7 @@ ex: docker run --name "websig-lizmap-entomo" -p 8081:80 -d -t -v /home/jancelin/
 
 7. Edit admin page in a browser for looking lizmap on the right qgis folder:
 ```
-Open http://"your_ip_serveur":8081/lizmap-web-client-2.11.0/lizmap/www/admin.php
+Open http://"your_ip_serveur":8081/websig/lizmap/www/admin.php
 
 Go to "lizmap configuration"
 
