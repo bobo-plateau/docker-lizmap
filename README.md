@@ -13,14 +13,12 @@ Apache, qgis-mapsever, lizmap-web-client, and all dependencies required for oper
 
 1. To build the image do:
 
-```
-docker pull jancelin/docker-lizmap 
-```
-or alternatively, you can build an image from Github, we can see what happens during installation:
+ you can build an image from Github, we can see what happens during installation:
 
 ```
 docker build -t jancelin/docker-lizmap git://github.com/jancelin/docker-lizmap
 ```
+
 
 before running: 
 
