@@ -47,11 +47,11 @@ cp /var/www/websig/lizmap/var/config/lizmapConfig.ini.php /home/lizmap_config/
 ```
 or download files if it's your first time with lizmap:
 
-https://github.com/3liz/lizmap-web-client/blob/master/lizmap/var/jauth.db
+https://github.com/3liz/lizmap-web-client/blob/2.11.1/lizmap/var/jauth.db
 
-https://github.com/3liz/lizmap-web-client/blob/master/lizmap/var/logs.db
+https://github.com/3liz/lizmap-web-client/blob/2.11.1/lizmap/var/logs.db
 
-https://github.com/3liz/lizmap-web-client/blob/master/lizmap/var/config/lizmapConfig.ini.php
+https://github.com/3liz/lizmap-web-client/blob/2.11.1/lizmap/var/config/lizmapConfig.ini.php
 
 
 4. Change permissions for docker read and write about the host:
