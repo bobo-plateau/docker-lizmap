@@ -2,7 +2,7 @@
 docker-lizmap 
 =============
 
-(lizmap-web-client-2.11.2 and qgis-mapserver 2.10.1 inside)
+(lizmap-web-client-2.12.2 and qgis-mapserver 2.10.1 inside)
 
 ![docker_lizmap](https://cloud.githubusercontent.com/assets/6421175/4627293/b7a0a594-5389-11e4-909b-916039a16981.png)
 
@@ -47,11 +47,11 @@ cp /var/www/websig/lizmap/var/config/lizmapConfig.ini.php /home/lizmap_config/
 ```
 or download files if it's your first time with lizmap:
 
-https://github.com/3liz/lizmap-web-client/blob/2.11.2/lizmap/var/jauth.db
+https://github.com/3liz/lizmap-web-client/blob/2.12.2/lizmap/var/jauth.db
 
-https://github.com/3liz/lizmap-web-client/blob/2.11.2/lizmap/var/logs.db
+https://github.com/3liz/lizmap-web-client/blob/2.12.2/lizmap/var/logs.db
 
-https://github.com/3liz/lizmap-web-client/blob/2.11.2/lizmap/var/config/lizmapConfig.ini.php
+https://github.com/3liz/lizmap-web-client/blob/2.12.2/lizmap/var/config/lizmapConfig.ini.php
 
 
 4. Change permissions for docker read and write about the host:
@@ -144,11 +144,11 @@ ________________________________________________________________________________
 
 Lizmap working for testing at 
 
-http://"your_ip_serveur":8081/lizmap-web-client-2.11.2/lizmap/www/
+http://"your_ip_serveur":8081/lizmap-web-client-2.12.2/lizmap/www/
 
 lizmap admin at 
 
-http://"your_ip_serveur":8081/lizmap-web-client-2.11.2/lizmap/www/admin.php
+http://"your_ip_serveur":8081/lizmap-web-client-2.12.2/lizmap/www/admin.php
 
 Lizmap working with your data and config at : 
 
