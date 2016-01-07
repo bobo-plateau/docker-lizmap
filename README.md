@@ -48,7 +48,7 @@ cp /var/www/websig/lizmap/var/config/lizmapConfig.ini.php /home/lizmap_config/
 ```
 or download files if it's your first time with lizmap:
 
-wget https://github.com/3liz/lizmap-web-client/blob/2.11.2/lizmap/var/jauth.db
+wget https://github.com/3liz/lizmap-web-client/blob/2.12.2/lizmap/var/jauth.db
 
 wget https://github.com/3liz/lizmap-web-client/blob/2.12.2/lizmap/var/logs.db
 
