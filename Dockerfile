@@ -6,8 +6,8 @@ ENV  DEBIAN_FRONTEND noninteractive
 RUN  dpkg-divert --local --rename --add /sbin/initctl
 # add qgis to sources.list
 RUN echo "deb     http://qgis.org/debian-ltr trusty main" >> /etc/apt/sources.list
-RUN gpg --keyserver keyserver.ubuntu.com --recv DD45F6C3
-RUN gpg --export --armor DD45F6C3 | apt-key add -
+RUN gpg --keyserver keyserver.ubuntu.com --recv 3FF5FFCAD71472C4
+RUN gpg --export --armor 3FF5FFCAD71472C4 | apt-key add -
 RUN apt-get -y update
 #-------------Application Specific Stuff ----------------------------------------------------
 RUN apt-get install -y python-simplejson xauth htop nano curl ntp ntpdate python-software-properties git wget unzip \
