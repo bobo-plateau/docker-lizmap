@@ -1,6 +1,9 @@
 #--------- Generic stuff all our Dockerfiles should start with so we get caching ------------
-FROM alpine
-MAINTAINER ancelin julien / docker-lizmap
+FROM ubuntu:14.04
+MAINTAINER ancelin julien / docker-qgis_server-lizmap
+RUN  export DEBIAN_FRONTEND=noninteractive
+ENV  DEBIAN_FRONTEND noninteractive
+RUN  dpkg-divert --local --rename --add /sbin/initctl
 RUN apt-get -y update
 #-------------Application Specific Stuff ----------------------------------------------------
 RUN apt-get install -y python-simplejson xauth htop nano curl ntp ntpdate python-software-properties git wget unzip \
