@@ -1,5 +1,5 @@
 #--------- Generic stuff all our Dockerfiles should start with so we get caching ------------
-FROM ubuntu:14.04
+FROM debian:jessie-slim
 MAINTAINER ancelin julien / docker-qgis_server-lizmap
 RUN  export DEBIAN_FRONTEND=noninteractive
 ENV  DEBIAN_FRONTEND noninteractive
