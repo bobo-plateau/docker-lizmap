@@ -1,18 +1,14 @@
 #--------- Generic stuff all our Dockerfiles should start with so we get caching ------------
-FROM ubuntu:14.04
+FROM debian:jessie-slim
 MAINTAINER ancelin julien / docker-qgis_server-lizmap
 RUN  export DEBIAN_FRONTEND=noninteractive
 ENV  DEBIAN_FRONTEND noninteractive
 RUN  dpkg-divert --local --rename --add /sbin/initctl
-# add qgis to sources.list
-RUN echo "deb     http://qgis.org/debian-ltr trusty main" >> /etc/apt/sources.list
-RUN gpg --keyserver keyserver.ubuntu.com --recv DD45F6C3
-RUN gpg --export --armor DD45F6C3 | apt-key add -
-RUN apt-get -y update
+RUN  apt-get -y update
 #-------------Application Specific Stuff ----------------------------------------------------
 RUN apt-get install -y python-simplejson xauth htop nano curl ntp ntpdate python-software-properties git wget unzip \
     apache2 libapache2-mod-fcgid php5 php5-cgi php5-curl php5-cli php5-sqlite php5-gd php5-pgsql \
-    libapache2-mod-php5 qgis-server apache2-mpm-prefork --force-yes
+    libapache2-mod-php5 apache2-mpm-prefork --force-yes
 RUN a2dismod php5; a2enmod actions; a2enmod fcgid ; a2enmod ssl; a2enmod rewrite; a2enmod headers; a2enmod deflate; a2enmod php5
 #config compression
 ADD mod_deflate.conf /etc/apache2/conf.d/mod_deflate.conf
@@ -45,10 +41,6 @@ VOLUME  /var/www/websig/lizmap/var
 VOLUME  /tmp
 #add a redirection for just call the ip
 ADD index.html /var/www/index.html
-#rajoute nos projections perso à qgis-server
-RUN wget https://github.com/jancelin/docker-lizmap/files/99407/srs.db.zip
-RUN unzip srs.db.zip
-RUN cp srs.db usr/share/qgis/resources/
 #add start.sh on first install, generate config file: ~/lizmap/var
 ADD start.sh /media/start.sh
 RUN chmod 0755 /media/start.sh
